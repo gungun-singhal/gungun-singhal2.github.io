@@ -1,0 +1,102 @@
+:root {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 1fr;
+}
+
+.col-1 {
+  background: #e38826;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.col-1 button {
+  color: #e38826;
+}
+
+.col-2 {
+  background: #006970;
+}
+
+.col-2 button {
+  color: #006970;
+}
+
+.col-3 {
+  background: #004241;
+  border-radius: 0 5px 5px 0;
+}
+
+.col-3 button {
+  color: #004241;
+}
+
+.col {
+  padding: 3rem;
+}
+
+.col .vehical-name {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 2.5rem);
+  margin: 2rem 0;
+}
+
+.col p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: clamp(0.8rem, 4.2vw, 1rem);
+}
+
+.col button {
+  background-color: #f2f2f2;
+  margin: 4rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    margin: 6rem 0;
+  }
+  .col-1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .col-3 {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
